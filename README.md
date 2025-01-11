@@ -10,7 +10,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-логин/ваш-репозиторий.git
+   git clone https://github.com/LinaSapozhnik1991/flights_search.git
 
 ## Установка и запуск json-server
 
