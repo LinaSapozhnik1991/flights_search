@@ -20,11 +20,11 @@
 1. Убедитесь, что у вас установлен Node.js.
 2. Установите `json-server` глобально:
    ```bash
-  yarn add -g json-server
+ ### `yarn add -g json-server`
   
   Запустите json-server на порту 5000:
 
-json-server --watch db.json --port 5000
+### `json-server --watch db.json --port 5000`
 
 ## Запуск
 1. yarn start
