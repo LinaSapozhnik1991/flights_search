@@ -1,0 +1,59 @@
+.home-page {
+  background-color: #feffff;
+  margin: 0 auto;
+}
+.home-page h2 {
+  color: #4a6aaf;
+  font-size: 34px;
+}
+.home-page {
+  background-color: #feffff;
+  margin: 0 auto;
+  padding: 20px; 
+}
+
+.home-page h2 {
+  color: #4a6aaf;
+  font-size: 34px;
+}
+
+/* Стили для разрешения 1920px */
+@media (min-width: 1920px) {
+  .home-page h2 {
+    font-size: 42px;
+  }
+}
+
+/* Стили для разрешения 1366px */
+@media (min-width: 1366px) and (max-width: 1919px) {
+  .home-page h2 {
+    font-size: 38px; 
+  }
+}
+
+/* Стили для разрешения 1024px */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .home-page h2 {
+    font-size: 34px; 
+  }
+}
+
+/* Стили для разрешения 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-page h2 {
+    font-size: 30px; 
+  }
+}
+
+/* Стили для разрешения 320px */
+@media (max-width: 767px) {
+ 
+  .home-page {
+    margin: 0 auto;
+    text-align: center;
+  }
+  h2 {
+    font-size: 26px; 
+
+  }
+}

@@ -1,0 +1,53 @@
+
+.app {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Стили для разрешения 1920px */
+@media (min-width: 1920px) {
+  .app {
+    font-size: 24px; /* Увеличиваем размер шрифта для больших экранов */
+    padding: 40px;
+  }
+}
+
+/* Стили для разрешения 1366px */
+@media (min-width: 1366px) and (max-width: 1919px) {
+  .app {
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    padding: 30px;
+  }
+}
+
+/* Стили для разрешения 1024px */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .app {
+    font-size: 18px; /* Уменьшаем размер шрифта */
+    padding: 25px;
+  }
+}
+
+/* Стили для разрешения 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .app {
+    font-size: 16px; /* Еще меньше размер шрифта */
+    padding: 20px;
+  }
+}
+
+/* Стили для разрешения 320px */
+@media (max-width: 767px) {
+  .app {
+    font-size: 14px; /* Наименьший размер шрифта */
+    padding: 15px;
+  }
+}

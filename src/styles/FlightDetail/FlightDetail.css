@@ -1,0 +1,140 @@
+
+
+.flight-card,.flight-details {
+  background-color: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+  padding: 30px; 
+  transition: transform 0.3s, box-shadow 0.3s; 
+  text-align: left; 
+}
+
+.flight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); 
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.flight-airline {
+  font-size: 1.4em;
+  font-weight: 800; 
+  color: #333;
+  margin: 0; 
+}
+
+
+.flight-card p,h4 {
+  margin: 5px 0;
+  color: #555; 
+  font-size: 1.2em; 
+  text-transform: uppercase;
+}
+.flight-info{
+  display: flex;
+  justify-content: space-around;
+}
+.book-button {
+  background-color: #28817a; 
+  color: white; 
+  border: none; 
+  border-radius: 5px;
+  padding: 10px 15px; 
+  cursor: pointer; 
+  font-size: 1em; 
+  transition: background-color 0.3s, transform 0.3s; 
+  margin-top: 10px; 
+  width: 250px; 
+}
+
+.book-button:hover {
+  background-color: #246b68; 
+  transform: scale(1.05); 
+}
+
+.flight-list{
+  display: grid;
+  grid-area: l;
+}
+.flight-detail_page{
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.flight-detail_page-title{
+  font-size: 48px;
+  color: #4475cf;
+}
+/* Адаптивные стили */
+
+/* Стили для разрешения 1920px */
+@media (min-width: 1920px) {
+  .flight-card, .flight-details {
+    padding: 40px; 
+  }
+  .flight-detail_page-title {
+    font-size: 56px; 
+  }
+}
+
+/* Стили для разрешения 1366px */
+@media (min-width: 1366px) and (max-width: 1919px) {
+  .flight-card, .flight-details {
+    padding: 35px; 
+  }
+  .flight-detail_page-title {
+    font-size: 52px;
+  }
+}
+
+/* Стили для разрешения 1024px */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .flight-card, .flight-details {
+    padding: 30px; 
+  }
+  .flight-detail_page-title {
+    font-size: 48px; 
+  }
+}
+
+/* Стили для разрешения 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .flight-card, .flight-details {
+    padding: 20px; 
+  }
+  .flight-card{
+    width: auto;
+    height: auto;
+  }
+  .flight-airline {
+    font-size: 1.2em; 
+  }
+  .flight-card p, h4 {
+    font-size: 1em; 
+  }
+  .book-button {
+    width: 100%; 
+  }
+}
+
+/* Стили для разрешения 320px */
+@media (max-width: 767px) {
+  .flight-detail_page-title {
+    font-size: 36px; 
+  }
+  .flight-card, .flight-details {
+    padding: 10px; 
+    
+  }
+  .book-button {
+    padding: 10px; 
+    font-size: 0.9em; 
+  }
+}

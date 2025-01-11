@@ -1,0 +1,116 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.booking h1 {
+  color: #2393af;
+}
+.booking-message {
+  color: #25c24d;
+  font-size: 32px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.booking-form {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+input,
+button {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.ok img {
+  width: 500px;
+  height: 500px;
+}
+/* Адаптивные стили */
+
+/* Стили для разрешения 1920px */
+@media (min-width: 1920px) {
+  .flight-card, .flight-details,.booking-form {
+    padding: 2.5rem; /* Увеличиваем отступы для больших экранов */
+  }
+  .flight-detail_page-title {
+    font-size: 3.5rem; /* Увеличиваем размер заголовка */
+  }
+}
+
+/* Стили для разрешения 1366px */
+@media (min-width: 1366px) and (max-width: 1919px) {
+  .flight-card, .flight-details,.booking-form {
+    padding: 2rem; /* Уменьшаем отступы */
+  }
+  .flight-detail_page-title {
+    font-size: 3.25rem; /* Уменьшаем размер заголовка */
+  }
+}
+
+/* Стили для разрешения 1024px */
+@media (min-width: 1024px) and (max-width: 1365px) {
+  .flight-card, .flight-details,.booking-form {
+    padding: 1.5rem; /* Размер отступов остается прежним */
+  }
+  .flight-detail_page-title {
+    font-size: 3rem; /* Размер заголовка остается прежним */
+  }
+}
+
+/* Стили для разрешения 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .flight-card, .flight-details {
+
+    padding: 1rem;
+  }
+  .flight-airline {
+    font-size: 1.1em; 
+  }
+  .flight-card p, h4 {
+    font-size: 0.9em; 
+  }
+  .book-button {
+    width: 100%; 
+  }
+}
+
+/* Стили для разрешения 320px */
+@media (max-width: 767px) {
+  .flight-detail_page-title {
+    font-size: 2.25rem;
+  }
+  .flight-card, .flight-details {
+    padding: 0.75rem;
+  }
+
+  .booking-form{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+  }
+  .book-button {
+    padding: 0.75rem; 
+    font-size: 0.85em;
+  }
+  .booking-message{
+font-size:12px;
+  }
+  .booking-message img{
+    width: 220px;
+    height: 220px;
+  }
+}
+
